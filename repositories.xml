@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+	<repo quality="experimental" status="unofficial">
+		<name><![CDATA[megacoffee]]></name>
+		<description lang="en"><![CDATA[Ebuilds from vekin.]]></description>
+		<homepage>https://github.com/vekin</homepage>
+		<owner type="project">
+			<name>vekin</name>
+			<email>vekinn@gmail.com</email>
+		</owner>
+		<source type="git">https://github.com/vekin/vekin-overlay.git</source>
+	</repo>
+</repositories>
