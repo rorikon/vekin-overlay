@@ -21,5 +21,5 @@ DEPEND=""
 
 src_install() {
 dodir usr/share/dwb/extensions/
-cp -R "${S}"* "${D}usr/share/dwb/extensions/" || die "Install failed!"
+cp -R "${S}src/"* "${D}usr/share/dwb/extensions/" || die "Install failed!"
 }
