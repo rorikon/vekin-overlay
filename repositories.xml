@@ -2,7 +2,7 @@
 <!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
 <repositories xmlns="" version="1.0">
 	<repo quality="experimental" status="unofficial">
-		<name><![CDATA[megacoffee]]></name>
+		<name><![CDATA[vekin-overlay]]></name>
 		<description lang="en"><![CDATA[Ebuilds from vekin.]]></description>
 		<homepage>https://github.com/vekin</homepage>
 		<owner type="project">
