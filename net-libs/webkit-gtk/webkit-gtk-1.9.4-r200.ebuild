@@ -121,9 +121,6 @@ src_prepare() {
 	# garbage collection test fails intermittently if icedtea-web is installed
 	epatch "${FILESDIR}/${PN}-1.7.90-test_garbage_collection.patch"
 
-	# occasional test failure due to additional Xvfb process spawned
-	epatch "${FILESDIR}/${PN}-1.8.1-tests-xvfb.patch"
-
 	# For >=sys-devel/automake-1.12 compability wrt #420591
 	sed -i -e 's:mkdir_p:MKDIR_P:' {.,Source/WebKit/gtk/po}/GNUmakefile.am || die
 
