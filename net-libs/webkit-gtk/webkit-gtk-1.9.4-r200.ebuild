@@ -81,9 +81,6 @@ src_prepare() {
 	# TODO: FAILS TO APPLY!
 	#use sparc && epatch "${FILESDIR}"/${PN}-1.2.3-fix-pool-sparc.patch
 
-	# CVE-2011-3064, https://bugzilla.redhat.com/show_bug.cgi?id=807596
-	epatch "${FILESDIR}/${PN}-1.8.0-svgimagebuffer-clip.patch"
-
 	# USE=-gstreamer build failure, bug #412221, https://bugs.webkit.org/show_bug.cgi?id=84526
 	epatch "${FILESDIR}/${PN}-1.8.1-CodeGeneratorGObject-properties.patch"
 
