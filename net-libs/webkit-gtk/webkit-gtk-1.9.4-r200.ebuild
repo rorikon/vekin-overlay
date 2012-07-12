@@ -84,15 +84,9 @@ src_prepare() {
 	# USE=-gstreamer build failure, bug #412221, https://bugs.webkit.org/show_bug.cgi?id=84526
 	epatch "${FILESDIR}/${PN}-1.8.1-CodeGeneratorGObject-properties.patch"
 
-	# bug #416057; in 1.9.x
-	epatch "${FILESDIR}/${PN}-1.8.1-gst-required-version.patch"
-
 	# intermediate MacPorts hack while upstream bug is not fixed properly
 	# https://bugs.webkit.org/show_bug.cgi?id=28727
 	use aqua && epatch "${FILESDIR}"/${PN}-1.6.1-darwin-quartz.patch
-
-	# Bug #403049, https://bugs.webkit.org/show_bug.cgi?id=79605
-	epatch "${FILESDIR}/${PN}-1.7.5-linguas.patch"
 
 	# Drop DEPRECATED flags
 	sed -i -e 's:-D[A-Z_]*DISABLE_DEPRECATED:$(NULL):g' GNUmakefile.am || die
