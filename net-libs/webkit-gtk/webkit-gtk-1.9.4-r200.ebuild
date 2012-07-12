@@ -32,7 +32,7 @@ RDEPEND="
 	>=dev-libs/glib-2.31.8:2
 	>=x11-libs/gtk+-2.13:2[aqua=,introspection?]
 	>=dev-libs/icu-3.8.1-r1
-	>=net-libs/libsoup-2.37.92:2.4[introspection?]
+	>=net-libs/libsoup-2.39.3:2.4[introspection?]
 	dev-db/sqlite:3
 	>=x11-libs/pango-1.21
 	x11-libs/libXrender
