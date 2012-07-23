@@ -1,6 +1,5 @@
-diff -up -x '.*' ../dwm-upstream/config.def.h ./config.def.h
---- ../dwm-upstream/config.def.h	2010-06-16 22:27:38.000000000 +0200
-+++ ./config.def.h	2010-06-16 22:27:39.000000000 +0200
+--- /config.def.h	2010-06-16 22:27:38.000000000 +0200
++++ /config.def.h	2010-06-16 22:27:39.000000000 +0200
 @@ -8,6 +8,19 @@ static const char normfgcolor[]     = "#
  static const char selbordercolor[]  = "#0066ff";
  static const char selbgcolor[]      = "#0066ff";
