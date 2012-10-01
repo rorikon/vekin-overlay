@@ -1,0 +1,19 @@
+--- a/src/screen.C	2011-06-22 12:44:37.000000000 +0200
++++ b/src/screen.C	2011-07-14 02:10:52.506392105 +0200
+@@ -29,6 +29,7 @@
+ #include "rxvtperl.h"           /* NECESSARY */
+ 
+ #include <inttypes.h>
++#include <X11/XKBlib.h>
+ 
+ #include "salloc.C" // HACK, should be a separate compile!
+ 
+@@ -1943,7 +1944,7 @@
+       bell_ev.start (VISUAL_BELL_DURATION);
+     }
+   else
+-    XBell (dpy, 0);
++	  XkbBell(dpy, parent, 100, None) ;
+   HOOK_INVOKE ((this, HOOK_BELL, DT_END));
+ #endif
+ }
