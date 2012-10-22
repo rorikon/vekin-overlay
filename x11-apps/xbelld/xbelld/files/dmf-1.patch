@@ -1,0 +1,45 @@
+diff -u xbelld-0.3.3/ChangeLog xbelld-new/ChangeLog
+--- xbelld-0.3.3/ChangeLog	2008-08-27 03:41:17.000000000 -0300
++++ xbelld-new/ChangeLog	2009-06-23 18:59:27.000000000 -0300
+@@ -1,3 +1,9 @@
++2009-06-23 21:56  dmf
++	* /xbelld.c: changed latency to 10000 microseconds from 0 to prevent
++	underruns from being the norm. alsa-lib-1.0.18
++	* /xbelld.1: added units expected for command line options, brought
++	volume range into line with code.
++
+ 2008-08-27 06:24  gi1242
+ 
+ 	* /trunk/xbelld.c, /trunk/xbelld.h: Fixes for big endian / pdp
+diff -u xbelld-0.3.3/xbelld.1 xbelld-new/xbelld.1
+--- xbelld-0.3.3/xbelld.1	2008-08-27 03:41:17.000000000 -0300
++++ xbelld-new/xbelld.1	2009-06-23 18:53:41.000000000 -0300
+@@ -119,13 +119,13 @@
+ .Bl -tag -width 4n
+ .
+ .It Fl d Ar duration
+-Duration of the beep.
++Duration of the beep in milliseconds.
+ .
+ .It Fl F Ar freq
+-Frequency of the beep.
++Frequency of the beep in hertz.
+ .
+ .It Fl v Ar vol
+-Volume of the beep (0 -- 127).
++Volume of the beep (0 -- 100).
+ .
+ .El
+ .Ed
+diff -u xbelld-0.3.3/xbelld.c xbelld-new/xbelld.c
+--- xbelld-0.3.3/xbelld.c	2008-08-27 03:41:17.000000000 -0300
++++ xbelld-new/xbelld.c	2009-06-23 19:09:15.000000000 -0300
+@@ -458,7 +458,7 @@
+ 	    1,		/* Mono */
+ 	    rate,
+ 	    1,		/* soft_resample */
+-	    0);		/* latency (us). Was 500000 (0.5sec) */
++	    10000);	/* latency (us). Was 500000 (0.5sec) */
+     if( status < 0 )
+     {
+ 	message( "Playback open error: %s", snd_strerror(status) );
