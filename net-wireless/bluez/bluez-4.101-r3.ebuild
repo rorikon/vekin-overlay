@@ -68,7 +68,7 @@ pkg_setup() {
 
 src_prepare() {
 	epatch "${FILESDIR}"/${P}-network{1,2,3,4}.patch
-    epatch "${FILESDIR}"/bluez-wimote.patch
+    epatch "${FILESDIR}"/wiimote.patch
 	if ! use consolekit; then
 		# No consolekit for at_console etc, so we grant plugdev the rights
 		epatch	"${FILESDIR}/bluez-plugdev.patch"
