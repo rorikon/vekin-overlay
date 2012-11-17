@@ -28,6 +28,11 @@ RDEPEND="x11-libs/libXext
 DEPEND="${RDEPEND}
 	>=x11-proto/dri2proto-2.6"
 
+src_prepare() {
+epatch "${FILESDIR}"/xserver-xorg-video-intel-2.20.2_virtual_crtc.patch
+}
+
+
 src_configure() {
 	XORG_CONFIGURE_OPTIONS=(
 		$(use_enable dri)
