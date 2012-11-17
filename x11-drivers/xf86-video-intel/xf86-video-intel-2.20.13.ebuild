@@ -38,7 +38,7 @@ DEPEND="${RDEPEND}
 	x11-proto/resourceproto"
 
 src_prepare() {
-epatch "${FILESDIR}"/xserver-xorg-video-intel-2.18.0_virtual_crtc.patch
+epatch "${FILESDIR}"/xserver-xorg-video-intel-2.20.2_virtual_crtc.patch
 }
 
 src_configure() {
