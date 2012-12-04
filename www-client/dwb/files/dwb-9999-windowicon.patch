@@ -1,10 +1,11 @@
---- src/view.c	2012-01-26 06:16:28.958449256 -0800
-+++ src/view.c	2012-01-26 06:18:50.396681034 -0800
-@@ -671,6 +671,7 @@
-   if (web) {
-     pb = webkit_web_view_get_icon_pixbuf(WEBVIEW(gl));
-     if (pb) {
-+      gtk_window_set_icon(GTK_WINDOW(dwb.gui.window), pb);
-       new = gdk_pixbuf_scale_simple(pb, dwb.misc.bar_height, dwb.misc.bar_height, GDK_INTERP_BILINEAR);
-       gdk_pixbuf_unref(pb);
-     }
+--- a/view.c	2012-12-04 14:34:54.321677004 -0800
++++ b/view.c	2012-12-04 14:36:05.738363208 -0800
+@@ -909,6 +909,7 @@
+         pb = webkit_web_view_get_icon_pixbuf(WEBVIEW(gl));
+         if (pb) 
+         {
++            gtk_window_set_icon(GTK_WINDOW(dwb.gui.window), pb);
+             new = gdk_pixbuf_scale_simple(pb, dwb.misc.bar_height, dwb.misc.bar_height, GDK_INTERP_BILINEAR);
+             g_object_unref(pb);
+         }
+
