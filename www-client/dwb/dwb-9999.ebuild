@@ -4,14 +4,14 @@
 
 EAPI=3
 
-inherit eutils mercurial
+inherit eutils git-2
 
 DESCRIPTION="Webkit-browser similar to vimprobable written in C"
 HOMEPAGE="http://portix.bitbucket.org/dwb/"
-EHG_REPO_URI="https://bitbucket.org/portix/dwb/src"
+EGIT_REPO_URI="https://bitbucket.org/portix/dwb.git"
 
 #EHG_REVISION="a280ea9d4027"
-S="${WORKDIR}/hg"
+#S="${WORKDIR}/hg"
 
 LICENSE="GPL-3"
 SLOT="0"
