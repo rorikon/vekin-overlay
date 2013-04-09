@@ -8,7 +8,7 @@ inherit eutils mercurial
 
 DESCRIPTION="Webkit-browser similar to vimprobable written in C"
 HOMEPAGE="http://portix.bitbucket.org/dwb/"
-EHG_REPO_URI="https://bitbucket.org/portix/dwb"
+EHG_REPO_URI="https://bitbucket.org/portix/dwb/src"
 
 #EHG_REVISION="a280ea9d4027"
 S="${WORKDIR}/hg"
