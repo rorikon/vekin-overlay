@@ -10,8 +10,7 @@ DESCRIPTION="Webkit-browser similar to vimprobable written in C"
 HOMEPAGE="http://portix.bitbucket.org/dwb/"
 EGIT_REPO_URI="https://bitbucket.org/portix/dwb.git"
 
-#EHG_REVISION="a280ea9d4027"
-#S="${WORKDIR}/hg"
+EGIT_COMMIT="e79118c"
 
 LICENSE="GPL-3"
 SLOT="0"
