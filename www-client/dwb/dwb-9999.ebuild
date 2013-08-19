@@ -13,9 +13,9 @@ EGIT_REPO_URI="https://bitbucket.org/portix/dwb.git"
 #EGIT_COMMIT="e79118c"
 #EGIT_COMMIT="c118bee"
 #EGIT_COMMIT="40bb86b"
-#EGIT_COMMIT="50d991b" broke
-#EGIT_COMMIT="082961e" work
-EGIT_COMMIT="76a6780"
+#EGIT_COMMIT="50d991b" #broke
+EGIT_COMMIT="082961e" #work
+#EGIT_COMMIT="76a6780" #work
 
 
 LICENSE="GPL-3"
