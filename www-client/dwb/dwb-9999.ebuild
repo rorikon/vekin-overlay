@@ -11,7 +11,8 @@ HOMEPAGE="http://portix.bitbucket.org/dwb/"
 EGIT_REPO_URI="https://bitbucket.org/portix/dwb.git"
 
 #EGIT_COMMIT="e79118c"
-EGIT_COMMIT="c118bee"
+#EGIT_COMMIT="c118bee"
+EGIT_COMMIT="40bb86b"
 
 LICENSE="GPL-3"
 SLOT="0"
