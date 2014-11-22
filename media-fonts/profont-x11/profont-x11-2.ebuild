@@ -2,18 +2,20 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
+EAPI=4
+
 inherit font
 
-DESCRIPTION="ProFont - The ultimate programming font."
-HOMEPAGE="http://www.tobias-jung.de/seekingprofont/"
-SRC_URI="http://www.tobiasjung.net/dl/${PN}.tar.gz"
+DESCRIPTION="ProFont - The ultimate programming font!"
+HOMEPAGE="http://tobiasjung.name/profont/"
+SRC_URI="http://tobiasjung.name/downloadfile.php?file=${PN}.zip"
 LICENSE="as-is"
 
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~x86-fbsd"
-IUSE="gzip"
+IUSE=""
 
-DEPEND="gzip? ( app-arch/gzip )"
+DEPEND="unzip? ( app-arch/unzip )"
 RDEPEND=""
 
 S="${WORKDIR}/${PN}"
